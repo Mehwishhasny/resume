@@ -1,0 +1,187 @@
+/* Mobile styles (default, no media query) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+    font-family: cursive,sans-serif;
+  
+  }
+  .info {
+    margin: 2px;
+    padding: 2px 2px;
+    justify-content: center;
+    align-items: center;
+  font-size: 14px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+  }
+
+  .image img {
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(35deg, rgba(145, 201, 191, 0.842), rgba(130, 209, 233, 0.45), rgba(94, 245, 182, 0.747), rgba(66, 83, 59, 0.582));
+  }
+
+  .content, .edu-content, .skills, .experience {
+    text-align: center;
+    padding: 10px;
+    display: block;
+  }
+
+  #edu {
+    background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45));
+    position: relative;
+  
+  }
+
+  #edu::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/education.png);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  #skills {
+    background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45)); /* Mobile background for skills */
+    position: relative;
+    height: 105vh;
+  
+  }
+
+  #skills::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/skills.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    z-index: -1;
+  }
+
+  #work-exp {
+    background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45)); /* Mobile background for work experience */
+    position: relative;
+    height: 80vh;
+  }
+
+  #work-exp::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+    background-image: url(./images/experience.png);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+}
+.list{
+  list-style: none;
+}
+#toggle-skills {
+  margin-top: 20px;
+  padding: 5px;
+  margin-left: 180px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 30px;
+  background: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: lightgray 0.5s ease-in-out;
+}
+#toggle-skills:hover {
+  color: black;
+  background-color: lightgray;
+}
+.skill-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+.box1 {
+  box-shadow: 10px 10px 10px lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  display: flex;
+}
+#skills h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#work-exp h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  gap: 40px;
+}
+.btn {
+  margin-top: 5px;
+  margin-left: 180px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 30px;
+  background: black;
+  color: white !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: lightgray 0.5s ease-in-out;
+}
+.btn:hover {
+  color: black !important;
+  background-color: lightgray;
+}

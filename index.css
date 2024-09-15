@@ -1,0 +1,263 @@
+/* Desktop styles (min-width: 481px) */
+@media only screen and (min-width: 481px) {
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: cursive, sans-serif;
+    }
+    #main {
+      background: linear-gradient(35deg, rgba(145, 201, 191, 0.842), rgba(130, 209, 233, 0.45), rgba(94, 245, 182, 0.747), rgba(66, 83, 59, 0.582));
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      margin: 5px;
+      justify-content: space-between;
+    }
+    .info {
+      margin: 5px;
+      padding: 5px 20px;
+      font-size: 18px !important;
+    }
+    .navbar {
+      color: blue;
+      justify-content: flex-end;
+      display: flex;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 25px 20px;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      font-size: 23px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+    }
+    .navbar ul li a:hover {
+      color: white;
+    }
+    #home {
+      height: 70vh !important;
+      background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45));
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image img {
+      width: 200px;
+      height: 250px;
+      border: 4px solid black;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      object-fit: cover;
+      margin: 20px 120px;
+    }
+    .container {
+      padding: 5px;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      word-spacing: 3px;
+      padding: 10px;
+    }
+    #edu {
+      height: 85vh !important;
+      background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45));
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      flex-direction: column;
+    }
+    #edu::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 400px;
+      background-image: url(./images/education.png);
+      opacity: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      margin-left: 380px;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+    .edu-content {
+      margin-left: 450px;
+      margin-bottom: 50px;
+      font-size: 35px;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+    }
+    .list {
+      list-style-type: none;
+      margin: 20px;
+      padding: 20px;
+      font-size: 22px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+    #skills {
+      height: 90vh !important;
+      background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45));
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #skills::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 600px;
+      height: 500px;
+      background-image: url(./images/skills.jpg);
+      opacity: 2.5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      margin-left: 350px;
+    }
+    #skills h2 {
+      font-size: 35px !important;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+    #skills-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .skill-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      align-items: center;
+      padding: 20px;
+    }
+    .box1 {
+      box-shadow: 10px 10px 10px lightgray;
+      border-radius: 5px;
+      padding: 20px !important;
+      margin: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .box1 h3 {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 27px !important;
+    }
+    #toggle-skills {
+      margin-top: 80px !important;
+      margin-right: 180px;
+      font-size: 20px;
+      padding: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 30px;
+      background: black;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: lightgray 0.5s ease-in-out;
+    }
+    #toggle-skills:hover {
+      color: black;
+      background-color: lightgray;
+    }
+    #work-exp {
+      height: 70vh !important;
+      background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.934), rgba(145, 179, 184, 0.45));
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #work-exp::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 350px !important;
+      height: 350px !important;
+      background-image: url(./images/experience.png);
+      opacity: 2.5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      margin-left: 500px;
+      margin-top: 50px;
+    }
+    #work-exp h2 {
+      font-size: 35px !important;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+    .experience {
+      margin: 20px;
+      padding: 20px;
+      font-size: 22px !important;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+    .experience li{
+      list-style: none;
+    }
+    .btn {
+      margin-top: 40px !important;
+      margin-right: 180px;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 30px;
+      background: black;
+      color: white !important;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: lightgray 0.5s ease-in-out;
+    }
+    .btn:hover {
+      color: black !important;
+      background-color: lightgray;
+    }
+  }
+  
